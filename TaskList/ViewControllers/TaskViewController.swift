@@ -9,7 +9,6 @@
 import RealmSwift
 
 class TaskViewController: UITableViewController {
-    
     // MARK: - Public Properties
     var taskList: TaskList!
     //
@@ -133,12 +132,10 @@ class TaskViewController: UITableViewController {
         
         editButtonEnabled(taskList.tasks.count)
     }
-    
 }
 
 // MARK: - Ext. Show Alert
 extension TaskViewController {
-    
     private func showAlert(with task: Task? = nil, completion: (() -> Void)? = nil) {
         let title = task != nil ? "Edit Task" : "New Task"
         
@@ -165,5 +162,4 @@ extension TaskViewController {
         
         editButtonEnabled(taskList.tasks.count)
     }
-    
 }

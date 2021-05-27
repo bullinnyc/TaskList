@@ -8,9 +8,8 @@
 
 import UIKit
 
+// MARK: - Ext. UITableViewCell
 extension UITableViewCell {
-    
-    // MARK: - Public Methods
     func configure(with taskList: TaskList) {
         let currentTasks = taskList.tasks.filter("isComplete = false")
         let completedTasks = taskList.tasks.filter("isComplete = true")
@@ -31,5 +30,4 @@ extension UITableViewCell {
         
         contentConfiguration = content
     }
-    
 }

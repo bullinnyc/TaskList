@@ -9,7 +9,6 @@
 import RealmSwift
 
 class TaskListViewController: UITableViewController {
-    
     // MARK: - IB Outlets
     @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
     //
@@ -125,12 +124,10 @@ class TaskListViewController: UITableViewController {
         
         editButtonEnabled(taskLists.count)
     }
-    
 }
 
 // MARK: - Ext. Show Alert
 extension TaskListViewController {
-    
     private func showAlert(with taskList: TaskList? = nil, completion: (() -> Void)? = nil) {
         let title = taskList != nil ? "Edit List" : "New List"
         
@@ -161,5 +158,4 @@ extension TaskListViewController {
         
         editButtonEnabled(taskLists.count)
     }
-    
 }

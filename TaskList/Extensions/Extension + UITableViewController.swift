@@ -8,8 +8,8 @@
 
 import UIKit
 
+// MARK: - Ext. UITableViewController
 extension UITableViewController {
-    
     func editButtonEnabled(_ tasksCount: Int) {
         if tasksCount == 0 {
             editButtonItem.isEnabled = false
@@ -21,5 +21,4 @@ extension UITableViewController {
     func rowIndex(_ row: Int, section: Int = 0) -> IndexPath {
         IndexPath(row: row, section: section)
     }
-    
 }

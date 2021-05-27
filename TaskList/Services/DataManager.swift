@@ -9,7 +9,6 @@
 import Foundation
 
 class DataManager {
-    
     // MARK: - Public Properties
     static let shared = DataManager()
     //
@@ -44,5 +43,4 @@ class DataManager {
             }
         }
     }
-    
 }

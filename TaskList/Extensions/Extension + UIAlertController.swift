@@ -8,9 +8,8 @@
 
 import UIKit
 
+// MARK: - Ext. UIAlertController
 extension UIAlertController {
-    
-    // MARK: - Public Methods
     static func createAlert(withTitle title: String, andMessage message: String) -> UIAlertController {
         UIAlertController(title: title, message: message, preferredStyle: .alert)
     }
@@ -63,5 +62,4 @@ extension UIAlertController {
             textField.text = task?.note
         }
     }
-    
 }

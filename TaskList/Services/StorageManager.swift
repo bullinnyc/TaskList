@@ -9,7 +9,6 @@
 import RealmSwift
 
 class StorageManager {
-    
     // MARK: - Public properties
     static let shared = StorageManager()
     
@@ -86,5 +85,4 @@ class StorageManager {
             print(error)
         }
     }
-    
 }
